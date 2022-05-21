@@ -16,7 +16,7 @@ body {
     width: 100%;
 }
 
-.header-inf {
+.header-link {
     font-family: fantasy, cursive;
 }
 
@@ -76,7 +76,7 @@ button:hover {
 /* Heading */
 
 h3,
-label[for="new-task"] {
+.new-task__label {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -86,7 +86,8 @@ label[for="new-task"] {
     text-transform: uppercase;
 }
 
-input[type="text"] {
+.input__text,
+.input__text-new {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -99,13 +100,15 @@ input[type="text"] {
     color: #888;
 }
 
-input[type="text"]:focus {
+
+.input__text:focus,
+.input__text-new:focus {
     color: #333;
 }
 
 /* New Task */
 
-label[for="new-task"] {
+.new-task__label {
     display: block;
     margin: 0 0 20px;
 }
@@ -116,7 +119,7 @@ label[for="new-task"] {
 
 /* Task list */
 
-li {
+.list__item {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
@@ -126,22 +129,22 @@ li {
     align-items: center;
 }
 
-li>* {
+.list__item>* {
     vertical-align: middle;
 }
 
-li>input[type="checkbox"] {
+.list__checkbox {
     margin: 0 10px;
 }
 
-li>label {
+.list__label {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
 
-li>input[type="text"] {
+.input__text {
     width: 226px;
 }
 
