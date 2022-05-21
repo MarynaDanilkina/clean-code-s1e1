@@ -37,7 +37,7 @@ body {
 .task {
     width: 56%;
     display: inline-block;
-    flex-grow: 1
+    flex-grow: 1;
 }
 
 .main-container__input {
@@ -139,8 +139,8 @@ li > label {
     width: 226px;
 }
 
-li >    input[type="text"] {
-    width: 226px
+li > input[type="text"] {
+    width: 226px;
 }
 
 .delete__img {
@@ -167,7 +167,7 @@ li >    input[type="text"] {
 
 #edit__input {
     display: inline-block;
-    width: 224px
+    width: 224px;
 }
 
 #edit__label {
