@@ -40,7 +40,7 @@
   flex-grow: 1;
 }
 
-.main__new-task {
+.new-task {
   display: flex;
 }
 
@@ -49,14 +49,14 @@
   padding: 0px;
 }
 
-.section-list__item,
+.list__item,
 .section__title {
   list-style: none;
 }
 
-.section-list__checkbox,
+.list__checkbox,
 .new-task__input,
-.section-list__input-text,
+.list__input,
 .button {
   outline: none;
 }
@@ -78,7 +78,7 @@
 /* Heading */
 
 .section__title,
-.main__new-label {
+.main__label {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -88,7 +88,7 @@
   text-transform: uppercase;
 }
 
-.section-list__input-text,
+.list__input,
 .new-task__input {
   margin: 0;
   font-size: 18px;
@@ -103,14 +103,14 @@
 }
 
 
-.section-list__input-text:focus,
+.list__input:focus,
 .new-task__input:focus {
   color: #333;
 }
 
 /* New Task */
 
-.main__new-label {
+.main__label {
   display: block;
   margin: 0 0 20px;
 }
@@ -121,7 +121,7 @@
 
 /* Task list */
 
-.section-list__item {
+.list__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -131,22 +131,22 @@
   align-items: center;
 }
 
-.section-list__item>* {
+.list__item>* {
   vertical-align: middle;
 }
 
-.section-list__checkbox {
+.list__checkbox {
   margin: 0 10px;
 }
 
-.section-list__label {
+.list__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.section-list__input-text {
+.list__input {
   width: 226px;
 }
 
@@ -162,22 +162,22 @@
 
 /* Completed */
 
-.list__completed .section-list__label {
+.list__completed .list__label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 
-.section-list__input-text {
+.list__input {
   display: none;
 }
 
-.item__edit .section-list__input-text {
+.item__edit .list__input {
   display: inline-block;
   width: 224px;
 }
 
-.item__edit .section-list__label {
+.item__edit .list__label {
   display: none;
 }
