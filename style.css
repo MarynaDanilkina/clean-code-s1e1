@@ -173,11 +173,11 @@
   display: none;
 }
 
-.item__edit .list__input {
+.list__item-edit .list__input {
   display: inline-block;
   width: 224px;
 }
 
-.item__edit .list__label {
+.list__item-edit .list__label {
   display: none;
 }
