@@ -16,7 +16,7 @@
   width: 100%;
 }
 
-.header-link {
+.header__link {
   font-family: fantasy, cursive;
 }
 
@@ -28,7 +28,7 @@
 
 }
 
-.main-container {
+.main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -40,23 +40,23 @@
   flex-grow: 1;
 }
 
-.main-container__input {
+.main__new-task {
   display: flex;
 }
 
-.list {
+.section__list {
   margin: 0;
   padding: 0px;
 }
 
 .list__item,
-.title {
+.section__title {
   list-style: none;
 }
 
-.list__checkbox,
-.input__text-new,
-.input__text,
+.item__checkbox,
+.new-task__input,
+.item__input-text,
 .button {
   outline: none;
 }
@@ -77,8 +77,8 @@
 
 /* Heading */
 
-.title,
-.new-task__label {
+.section__title,
+.main__new-label {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -88,8 +88,8 @@
   text-transform: uppercase;
 }
 
-.input__text,
-.input__text-new {
+.item__input-text,
+.new-task__input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -103,19 +103,19 @@
 }
 
 
-.input__text:focus,
-.input__text-new:focus {
+.item__input-text:focus,
+.new-task__input:focus {
   color: #333;
 }
 
 /* New Task */
 
-.new-task__label {
+.main__new-label {
   display: block;
   margin: 0 0 20px;
 }
 
-.input__text-new {
+.new-task__input {
   width: 318px;
 }
 
@@ -135,49 +135,49 @@
   vertical-align: middle;
 }
 
-.list__checkbox {
+.item__checkbox {
   margin: 0 10px;
 }
 
-.list__label {
+.item__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.input__text {
+.item__input-text {
   width: 226px;
 }
 
-.delete__img {
+.button__delete-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.delete__img:hover {
+.button__delete-img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
 
-.list__completed .list__label {
+.list__completed .item__label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 
-.input__text {
+.item__input-text {
   display: none;
 }
 
-.item__edit .input__text {
+.item__edit .item__input-text {
   display: inline-block;
   width: 224px;
 }
 
-.item__edit .list__label {
+.item__edit .item__label {
   display: none;
 }
